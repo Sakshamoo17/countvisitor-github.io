@@ -26,8 +26,4 @@ $insertIp=$DBH ->prepare($query);
 $insertIp->execute();
 
 }
-$number=$DBH->prepare("SELECT ip FROM visitor");
-$number->execute(); 
-$visitor=$number->rowCount(); 
-echo $visitor
- ?>
+
