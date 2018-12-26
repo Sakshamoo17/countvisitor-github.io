@@ -20,10 +20,5 @@ $host='localhost';
        $Check=$DBH ->prepare($sql); 
        $Check->execute();
        $CheckIp=$Check->rowCount();
-if ($CheckIp==0) {
-$query="INSERT INTO visitor(id, ip) VALUES(NULL, '$ip')"; 
-$insertIp=$DBH ->prepare($query); 
-$insertIp->execute();
-
-}
+if ($CheckIp==0
 
